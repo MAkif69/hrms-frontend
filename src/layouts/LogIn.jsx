@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function SearchBox() {
+export default function LogIn() {
     return (
         <div>
-            Arama kutusu
+            LogIn
         </div>
     )
 }

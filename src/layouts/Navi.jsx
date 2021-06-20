@@ -1,31 +1,23 @@
 import React from "react";
-
-import { Button, Container, Dropdown, Menu } from "semantic-ui-react";
-
+import LogIn from "./LogIn";
+import Register from "./Register";
+import { Button, Menu, Container } from "semantic-ui-react";
 export default function Navi() {
   return (
     <div>
-      <Menu inverted>
+      <Menu>
         <Container>
-          <Menu.Item name="home" />
-          <Menu.Item name="CV" />
+          <Menu.Item>
+            <Button primary>
+              <Register />
+            </Button>
+          </Menu.Item>
 
-          <Menu.Menu position="right">
-            <Dropdown item text="Language">
-              <Dropdown.Menu>
-                <Dropdown.Item>English</Dropdown.Item>
-                <Dropdown.Item>Russian</Dropdown.Item>
-                <Dropdown.Item>Spanish</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-
-            <Menu.Item>
-              <Button primary>Register</Button>
-            </Menu.Item>
-            <Menu.Item>
-              <Button primary>Login</Button>
-            </Menu.Item>
-          </Menu.Menu>
+          <Menu.Item>
+            <Button>
+              <LogIn />
+            </Button>
+          </Menu.Item>
         </Container>
       </Menu>
     </div>
