@@ -8,7 +8,7 @@ export default function JobPostings() {
   useEffect(() => {
     let jobPostingService = new JobPostingService();
     jobPostingService.getJobPostings().then(result=>setjobPostings(result.data.data))
-  });
+  },[]);
 
   return (
     <div>
