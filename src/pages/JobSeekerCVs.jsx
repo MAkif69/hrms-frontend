@@ -22,7 +22,7 @@ export default function JobSeekerCVs() {
               <Table.HeaderCell>Mezun Olduğu Okul</Table.HeaderCell>
               <Table.HeaderCell>Mezun Olduğu Bölüm</Table.HeaderCell>
               <Table.HeaderCell>Mezuniyet Yılı</Table.HeaderCell>
-              <Table.HeaderCell>Detay</Table.HeaderCell>
+              <Table.HeaderCell>Detaylar</Table.HeaderCell>
             </Table.Row>
           </Table.Header>
 
