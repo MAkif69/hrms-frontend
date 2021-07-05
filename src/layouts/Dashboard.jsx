@@ -5,6 +5,7 @@ import { Grid } from "semantic-ui-react";
 import { Route } from "react-router-dom";
 import Menu from "../layouts/Menu";
 import JobSeekerCVs from "../pages/JobSeekerCVs";
+import JobPostingAdd from "../pages/JobPostingAdd";
 
 
 export default function DashBoard() {
@@ -18,6 +19,7 @@ export default function DashBoard() {
           <Grid.Column width="12">
             <Route path="/JobPostings" component={JobPostings} />
             <Route path="/JobSeekerCvs" component={JobSeekerCVs} />
+            <Route path="/JobPostingAdd" component={JobPostingAdd} />
           </Grid.Column>
         </Grid.Row>
       </Grid>
