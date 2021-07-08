@@ -19,7 +19,7 @@ export default function DashBoard() {
           <Grid.Column width="12">
             <Route path="/JobPostings" component={JobPostings} />
             <Route path="/JobSeekerCvs" component={JobSeekerCVs} />
-            <Route path="/JobPostingAdd" component={JobPostingAdd} />
+            <Route path="/JobPosting/Add" component={JobPostingAdd} />
           </Grid.Column>
         </Grid.Row>
       </Grid>

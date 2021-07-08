@@ -1,7 +1,8 @@
-import { Formik,Form,ErrorMessage,Field} from "formik";
+import { Formik,Form} from "formik";
 import React from "react";
-import { Button, FormField, Label } from "semantic-ui-react";
+import { Button} from "semantic-ui-react";
 import * as Yup from "yup";
+import HrsmTextInput from "../utulities/customFormControls/HrsmTextInput";
 
 export default function JobPostingAdd() {
   const initialValues = {
@@ -46,72 +47,17 @@ export default function JobPostingAdd() {
         console.log(values)
       }}>
         <Form>
-          <FormField>
-              <Field name="jobDescription" placeholder="Açıklama"></Field>
-              <ErrorMessage name="jobDescription" render={error=>
-                  <Label pointing basic color="red" content={error}></Label>
-              }></ErrorMessage>
-          </FormField>
-          <FormField>
-              <Field name="maxSalary" placeholder="Mak maaş"></Field>
-              <ErrorMessage name="jobDescription" render={error=>
-                  <Label pointing basic color="red" content={error}></Label>
-              }></ErrorMessage>
-          </FormField>
-          <FormField>
-              <Field name="minSalary" placeholder="Min maaş"></Field>
-              <ErrorMessage name="jobDescription" render={error=>
-                  <Label pointing basic color="red" content={error}></Label>
-              }></ErrorMessage>
-          </FormField>
-          <FormField>
-              <Field name="openPositionNumber" placeholder="Alınacak eleman sayısı"></Field>
-              <ErrorMessage name="jobDescription" render={error=>
-                  <Label pointing basic color="red" content={error}></Label>
-              }></ErrorMessage>
-          </FormField>
-          <FormField>
-              <Field name="createdDate" placeholder="İlana Çıkış Tarihi"></Field>
-              <ErrorMessage name="jobDescription" render={error=>
-                  <Label pointing basic color="red" content={error}></Label>
-              }></ErrorMessage>
-          </FormField>
-          <FormField>
-              <Field name="lastApplyDate" placeholder="Son Başvuru Tarihi"></Field>
-              <ErrorMessage name="jobDescription" render={error=>
-                  <Label pointing basic color="red" content={error}></Label>
-              }></ErrorMessage>
-          </FormField>
-          <FormField>
-              <Field name="cityId" placeholder="Şehir İsmi"></Field>
-              <ErrorMessage name="jobDescription" render={error=>
-                  <Label pointing basic color="red" content={error}></Label>
-              }></ErrorMessage>
-          </FormField>
-          <FormField>
-              <Field name="companyId" placeholder="Şirket İsmi"></Field>
-              <ErrorMessage name="jobDescription" render={error=>
-                  <Label pointing basic color="red" content={error}></Label>
-              }></ErrorMessage>
-          </FormField>
-          <FormField>
-              <Field name="positionId" placeholder="Pozisyon İsmi"></Field>
-              <ErrorMessage name="jobDescription" render={error=>
-                  <Label pointing basic color="red" content={error}></Label>
-              }></ErrorMessage>
-          </FormField>
-          <FormField>
-              <Field name="workTimeId" placeholder="Çalışma Zamanı"></Field>
-              <ErrorMessage name="jobDescription" render={error=>
-                  <Label pointing basic color="red" content={error}></Label>
-              }></ErrorMessage>
-          </FormField>
-          <FormField>
-              <Field name="workTypeId" placeholder="Çalışma Tipi"></Field>
-              <ErrorMessage name="jobDescription" render={error=>
-                  <Label pointing basic color="red" content={error}></Label>
-              }></ErrorMessage>
-          </FormField>
+            <HrsmTextInput name="jobDescription" placeholder="Açıklama"/>
+            <HrsmTextInput name="maxSalary" placeholder="Maks maaş bilgisi"/>
+            <HrsmTextInput name="minSalary" placeholder="Min maaş bilgisi"/>
+            <HrsmTextInput name="openPositionNumber" placeholder="Alınacak eleman sayısı"/>
+            <HrsmTextInput name="createdDate" placeholder="İlana Çıkış Tarihi"/>
+            <HrsmTextInput name="lastApplyDate" placeholder="Son Başvuru Tarihi"/>
+            <HrsmTextInput name="cityId" placeholder="Şehir İsmi Seçiniz."/>
+            <HrsmTextInput name="companyId" placeholder="Şirket İsmi Seçiniz"/>
+            <HrsmTextInput name="positionId" placeholder="Posziyon İsmini Giriniz"/>
+            <HrsmTextInput name="workTimeId" placeholder="Çalışma Zamanını Giriniz"/>   
+            <HrsmTextInput name="workTypeId" placeholder="Çalışma Tipini Giriniz"/>  
           <Button color="green" type="submit">Ekle</Button>
         </Form>
       </Formik>
