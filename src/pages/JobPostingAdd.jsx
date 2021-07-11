@@ -1,6 +1,6 @@
-import { Formik,Form} from "formik";
+import { Formik} from "formik";
 import React from "react";
-import { Button} from "semantic-ui-react";
+import { Button,Form} from "semantic-ui-react";
 import * as Yup from "yup";
 import HrsmTextInput from "../utulities/customFormControls/HrsmTextInput";
 
@@ -53,7 +53,7 @@ export default function JobPostingAdd() {
             <HrsmTextInput name="openPositionNumber" placeholder="Alınacak eleman sayısı"/>
             <HrsmTextInput name="createdDate" placeholder="İlana Çıkış Tarihi"/>
             <HrsmTextInput name="lastApplyDate" placeholder="Son Başvuru Tarihi"/>
-            <HrsmTextInput name="cityId" placeholder="Şehir İsmi Seçiniz."/>
+            <HrsmTextInput name="cityId" placeholder="Şehir İsmi Seçiniz." />
             <HrsmTextInput name="companyId" placeholder="Şirket İsmi Seçiniz"/>
             <HrsmTextInput name="positionId" placeholder="Posziyon İsmini Giriniz"/>
             <HrsmTextInput name="workTimeId" placeholder="Çalışma Zamanını Giriniz"/>   
